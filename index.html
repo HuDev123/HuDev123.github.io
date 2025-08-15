@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background-color: #0f1419
+      background-color: #0f1419;
       scroll-behavior: smooth;
     }
 
@@ -21,6 +22,7 @@
       top: 0;
       z-index: 1000;
     }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -28,44 +30,52 @@
       padding: 10px 0;
       margin: 0;
     }
+
     nav ul li {
       margin: 0 20px;
     }
+
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
     }
+
     nav ul li a:hover {
       color: #4CAF50;
     }
 
     /* Banner with background image */
     .banner {
-      background: url('https://plus.unsplash.com/premium_photo-1675873579647-9452e840cb8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFydCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D?auto=format&fit=crop&w=1600&q=80')
-                  no-repeat center center/cover;
+      background: url('https://plus.unsplash.com/premium_photo-1675873579647-9452e840cb8e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFydCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 140px 20px 100px;
       position: relative;
     }
+
     .banner::before {
       content: "";
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
       z-index: 1;
     }
+
     .banner-content {
       position: relative;
       z-index: 2;
     }
+
     .banner h1 {
       font-size: 2.8rem;
       margin: 0 0 10px;
     }
+
     .banner p {
       font-size: 1.2rem;
       opacity: 0.9;
@@ -78,8 +88,9 @@
       background: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
     h2 {
       color: #333;
     }
@@ -94,6 +105,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -115,14 +127,23 @@
   </header>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm a QA Engineer passionate about creating clean, functional, and
-      beautiful web projects. This site is built with HTML & CSS and hosted
-      on GitHub Pages.
-    </p>
-  </section>
+ <section id="about">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h2>About Me</h2>
+      </div>
+      <div class="flip-card-back">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm a QA Engineer passionate about creating clean, functional, and
+          beautiful web projects. This site is built with HTML & CSS and hosted
+          on GitHub Pages.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Projects Section -->
   <section id="projects">
@@ -149,4 +170,5 @@
   </footer>
 
 </body>
+
 </html>
