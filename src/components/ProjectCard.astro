@@ -1,0 +1,18 @@
+---
+const { title, category, description, impact, tags, href } = Astro.props;
+---
+
+<article class="project-card" data-reveal>
+  <div class="project-card__top">
+    <p class="project-card__category">{category}</p>
+    <h3>{title}</h3>
+  </div>
+  <p class="project-card__description">{description}</p>
+  <p class="project-card__impact">{impact}</p>
+  <div class="project-card__meta">
+    <div class="tags">
+      {tags.map((tag) => <span>{tag}</span>)}
+    </div>
+    <a class="project-card__link" href={href}>Explore</a>
+  </div>
+</article>

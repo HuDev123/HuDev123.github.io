@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Portfolio',
+  description = 'A polished personal portfolio built with Astro.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#09111f" />
+    <title>{title}</title>
+  </head>
+  <body id="top">
+    <slot />
+  </body>
+</html>
