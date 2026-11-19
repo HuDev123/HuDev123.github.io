@@ -1,0 +1,12 @@
+---
+const { period, title, company, description } = Astro.props;
+---
+
+<article class="timeline-item" data-reveal>
+  <p class="timeline-item__period">{period}</p>
+  <div class="timeline-item__body">
+    <h3>{title}</h3>
+    <p class="timeline-item__company">{company}</p>
+    <p>{description}</p>
+  </div>
+</article>
